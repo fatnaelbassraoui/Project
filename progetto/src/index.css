@@ -1,0 +1,356 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("~leaflet/dist/leaflet.css");
+
+/* maps */
+.leaflet-container {
+    width: 80%;
+    height: 70vh;
+    border-radius: 19px;
+    margin-top: 30PX;
+}
+
+:root {
+    --leaflet-tile-filter: brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+}
+
+.leaflet-tile {
+    filter: var(--leaflet-tile-filter);
+
+}
+
+.leaflet-container {
+    background: #2A2B2D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0A0F1E;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*Navbar*/
+/*navbar logo*/
+.logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.animationLogo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    animation: identifier 0.7s normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes identifier {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+
+        transform: translateX(-8px);
+    }
+}
+
+/*the left-right-bottom white lines of Navbar */
+.border-box {
+    animation: navAnimation 0.7s normal;
+}
+
+@keyframes navAnimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-300px);
+    }
+}
+
+.border-box2 {
+    animation: navAnimation 0.7s normal;
+}
+
+@keyframes navAnimation {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-600px);
+    }
+
+
+}
+
+.animationNav {
+    animation: navAnimation 0.7s normal;
+}
+
+@keyframes navAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.burger-container {
+    margin-right: 50px;
+
+
+}
+
+.colorGradient {
+    background: linear-gradient(180deg, #0A0F1E 0%, rgba(10, 15, 30, 0) 100%);
+}
+
+
+.navList {
+    display: none;
+}
+
+.nebulous {
+    position: absolute;
+    width: 4582.64px;
+    height: 400px;
+    left: -2090.62px;
+    top: 300px;
+    background: radial-gradient(circle, rgb(6, 37, 237) 1%, rgb(112, 103, 237) 12%, rgb(130, 9, 114) 21%, rgb(120, 1, 106) 70%);
+    filter: blur(150px);
+}
+
+.text-planets {
+    position: absolute;
+    width: 40%;
+    max-width: 900px;
+    height: auto;
+    left: 20%;
+    top: 270px;
+    font-family: 'Prompt';
+    font-style: light;
+    font-weight: 300;
+    font-size: 2vw;
+    line-height: 130%;
+    color: #FFFFFF;
+
+}
+
+
+.dot-grid {
+    display: grid;
+    grid-template-columns: repeat(11, 10px);
+    width: 30vw;
+    height: 30vw;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.dot-grid2 {
+    display: grid;
+    
+    grid-template-columns: repeat(10, 10px);
+    width: 40vw;
+    height: 40vw;
+    margin-bottom: 50px;
+
+}
+
+.dot2 {
+    width: 0.2vw;
+    height: 0.2vw;
+    background: linear-gradient(114.29deg, rgba(143, 157, 199, 0) 0%, #5a6278 49.35%);
+    border-radius: 50%;
+}
+
+.dot {
+    width: 0.2vw;
+    height: 0.2vw;
+    background: linear-gradient(114.29deg, rgba(143, 157, 199, 0) 0%, #5a6278 49.35%);
+    border-radius: 50%;
+}
+
+.planetsImg {
+    max-width: 100%;
+    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
+    margin-left: 38%;
+    margin-bottom: 10%;
+    transform: rotate(-10deg);
+}
+
+.card-title {
+    Font-family: ' Space Grotesk';
+    Font-style: ' Medium';
+    Font-size: 5vw;
+    height: auto;
+    Line-height: 130%;
+    Vertical-align: Top;
+    color: #FFFFFF;
+    Fill: Solid #FFFFFF
+}
+
+.aboutUs {
+    Font-family: ' Space Grotesk';
+    Font-style: Medium;
+    Font-size: 5vw;
+    height: auto;
+    Line-height: 130%;
+}
+
+.aboutUsTitle {
+    Font-family: 'Space Grotesk';
+    Font-style: Medium;
+    Font-size: 10vw;
+    Line-height: 169px;
+    Line-height: 130%;
+
+}
+
+.aboutUsText {
+    Font-family: ' Space Grotesk';
+    Font-style: Medium;
+    width: 75%;
+    Font-size: 2vw;
+    Line-height: 180%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    Font-family: 'Prompt';
+    Font-style: 'Regular';
+    Font-size: 14px;
+    Line-height: 130%;
+}
+
+.contactUsTitle {
+    Font-family: 'Space Grotesk';
+    Font-size: 10vw;
+    Line-height: 130%;
+
+}
+
+#map {
+    height: 180px;
+}
+
+.formInput {
+    background-color: #222734;
+
+}
+
+.formInput:hover {
+    border-color: #3d465f;
+}
+
+.text-label-form {
+    Font-family: 'Prompt Font';
+    Font-style: 'Regular';
+    Font-size: 14px;
+    Line-height: 130%;
+
+}
+
+.ContainerLogoCard {
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    width: 7.5vw;
+    height: 7.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textLogoCard {
+    Font-family: 'Space Grotesk';
+    Font-style: 'bold';
+    Font-size: 2vw;
+    Line-height: 100%;
+}
+
+.textTitleCard1 {
+    Font-family: 'Space Grotesk';
+    Font-style: 'medium';
+    Font-size: 9vw;
+    Line-height: 130%;
+}
+
+.textTitleCard2 {
+    Font-family: 'prompt';
+    Font-style: 'thin';
+    Font-size: 4vw;
+    Line-height: 130%;
+}
+
+.textTitleCard3 {
+    Font-family: 'prompt';
+    Font-style: 'regular';
+    Font-size: 2vw;
+    Line-height: 120%;
+    color: rgba(83, 87, 97, 1);
+}
+
+.textCard3 {
+    Font-family: 'prompt';
+    Font-style: 'light';
+    Font-size: 1.5vw;
+    Line-height: 160%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.imgCard4 {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%
+}
+
+.textCard4 {
+    Font-family: 'prompt';
+    Font-style: 'light';
+    Font-size: 1.6vw;
+    Line-height: 160%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.titleCarousel {
+    Font-family: 'Space Grotesk';
+    Font-style: 'medium';
+    Font-size: 6vw;
+    Line-height: 130%;
+}
+
+.carouselImgText {
+    Font-family: 'Space Grotesk';
+    Font-style: 'bold';
+    Font-size: 3vw;
+    Line-height: 100%;
+    color: #222734;
+}
+
+.footerLogo{
+    width: 45px;
+}
