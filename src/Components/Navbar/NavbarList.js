@@ -11,15 +11,15 @@ const NavbarList = ({ burger }) => {
                 <motion.li
                     whileHover={{ scale: 1.1, originX: 0, backgroundColor: 'white', marginTop: '-1rem' }}
                     transition={{ duration: 0.5 }}
-                ><a>Progetti</a></motion.li>
+                ><p>Progetti</p></motion.li>
                 <motion.li
                     whileHover={{ scale: 1.1, originX: 0, backgroundColor: 'white', marginTop: '-1rem' }}
                     transition={{ duration: 0.5 }}
-                ><a>Chi siamo</a></motion.li>
+                ><p>Chi siamo</p></motion.li>
                 <motion.li
                     whileHover={{ scale: 1.1, originX: 0, backgroundColor: 'white', marginTop: '-1rem' }}
                     transition={{ duration: 0.5 }}
-                ><a>Contattaci</a></motion.li>
+                ><p>Contattaci</p></motion.li>
             </ul>
         </div>
 
