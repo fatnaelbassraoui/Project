@@ -14,23 +14,23 @@ const FooterComponent2 = () => {
                 <div
                     className='flex flex-row gap-4 md:flex-col'
                 >
-                    <a href="#" class="link link-hover ">Lorem</a>
-                    <a href="#" class="link link-hover">Ipsum</a>
-                    <a href="#" class="link link-hover">Dolorem sit</a>
-                    <a href="#" class="link link-hover">Quam</a>
-                    <a href="#" class="link link-hover">Lorem</a>
+                    <li class="link link-hover ">Lorem</li>
+                    <li class="link link-hover">Ipsum</li>
+                    <li class="link link-hover">Dolorem sit</li>
+                    <li class="link link-hover">Quam</li>
+                    <li class="link link-hover">Lorem</li>
                 </div>
             </div>
             <div>
-                <a href="#" class="link link-hover font-bold text-sm">Protervium</a>
+                <li class="link link-hover font-bold text-sm">Protervium</li>
                 <div
                     className='flex flex-row gap-4 md:flex-col'
                 >
-                    <a href="#" class="link link-hover ">Lorem</a>
-                    <a href="#" class="link link-hover">Ipsum</a>
-                    <a href="#" class="link link-hover">Dolorem sit</a>
-                    <a href="#" class="link link-hover">Quam</a>
-                    <a href="#" class="link link-hover">Lorem</a>
+                    <li class="link link-hover ">Lorem</li>
+                    <li class="link link-hover">Ipsum</li>
+                    <li class="link link-hover">Dolorem sit</li>
+                    <li class="link link-hover">Quam</li>
+                    <li class="link link-hover">Lorem</li>
                 </div>
             </div>
             <div>
@@ -38,11 +38,11 @@ const FooterComponent2 = () => {
                 <div
                     className='flex flex-row gap-4 md:flex-col'
                 >
-                    <a href="#" class="link link-hover ">Lorem</a>
-                    <a href="#" class="link link-hover">Ipsum</a>
-                    <a href="#" class="link link-hover">Dolorem sit</a>
-                    <a href="#" class="link link-hover">Quam</a>
-                    <a href="#" class="link link-hover">Lorem</a>
+                    <li class="link link-hover ">Lorem</li>
+                    <li class="link link-hover">Ipsum</li>
+                    <li class="link link-hover">Dolorem sit</li>
+                    <li class="link link-hover">Quam</li>
+                    <li class="link link-hover">Lorem</li>
                 </div>
             </div>
             <div>
@@ -50,11 +50,11 @@ const FooterComponent2 = () => {
                 <div
                     className='flex flex-row gap-4 md:flex-col'
                 >
-                    <a href="#" class="link link-hover ">Lorem</a>
-                    <a href="#" class="link link-hover">Ipsum</a>
-                    <a href="#" class="link link-hover">Dolorem sit</a>
-                    <a href="#" class="link link-hover">Quam</a>
-                    <a href="#" class="link link-hover">Lorem</a>
+                    <li class="link link-hover ">Lorem</li>
+                    <li class="link link-hover">Ipsum</li>
+                    <li class="link link-hover">Dolorem sit</li>
+                    <li class="link link-hover">Quam</li>
+                    <li class="link link-hover">Lorem</li>
                 </div>
             </div>
             <div>
@@ -62,11 +62,11 @@ const FooterComponent2 = () => {
                 <div
                     className='flex flex-row gap-4 md:flex-col'
                 >
-                    <a href="#" class="link link-hover ">Lorem</a>
-                    <a href="#" class="link link-hover">Ipsum</a>
-                    <a href="#" class="link link-hover">Dolorem sit</a>
-                    <a href="#" class="link link-hover">Quam</a>
-                    <a href="#" class="link link-hover">Lorem</a>
+                    <li class="link link-hover ">Lorem</li>
+                    <li class="link link-hover">Ipsum</li>
+                    <li class="link link-hover">Dolorem sit</li>
+                    <li class="link link-hover">Quam</li>
+                    <li class="link link-hover">Lorem</li>
                 </div>
             </div>
         </footer>

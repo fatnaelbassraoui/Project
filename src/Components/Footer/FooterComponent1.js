@@ -18,26 +18,26 @@ const FooterComponent1 = () => {
                     alt="Logo" />
             </div>
             <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end ">
-                <a href="#"> <img
+                <li href="#"> <img
                     src={Linkedin}
                     alt="Linkedin" />
-                </a>
-                <a href="#"> <img
+                </li>
+                <li href="#"> <img
                     src={Tiktok}
                     alt="Tiktok" />
-                </a>
-                <a href="#"> <img
+                </li>
+                <li href="#"> <img
                     src={Twitter}
                     alt="Twitte" />
-                </a>
-                <a href="#"> <img
+                </li>
+                <li href="#"> <img
                     src={Facebook}
                     alt="Facebook" />
-                </a>
-                <a href="#"> <img
+                </li>
+                <li href="#"> <img
                     src={Instagram}
                     alt="Instagram" />
-                </a>
+                </li>
 
             </div>
         </footer>
